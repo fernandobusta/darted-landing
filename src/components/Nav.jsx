@@ -5,8 +5,8 @@ import logo from '../logo.svg'
 
 export default function Nav() {
     const navigation = [
-        { name: "About", href: "#experience", current: false },
-        { name: "Product", href: "#skills", current: false },
+        { name: "About", href: "#hero", current: false },
+        { name: "Product", href: "#product", current: false },
         { name: "Contact", href: "#contact", current: false },
     ];
 
@@ -39,7 +39,7 @@ export default function Nav() {
                                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                                     <div className="flex flex-shrink-0 items-center">
                                         <div >
-                                            <a href="">
+                                            <a href="#hero">
                                                 <img
                                                     src={logo}
                                                     width={100}
