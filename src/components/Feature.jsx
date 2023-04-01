@@ -23,7 +23,7 @@ export default function Feature() {
     return (
         <div className='flex flex-col justify-center items-center mt-32 h-screen'>
                 <div>
-                    <h1 className='text-5xl font-bold text-gray-300'>Grow your buisness</h1>
+                    <h1 className='text-6xl font-bold text-gray-300'>Grow your buisness</h1>
                     <br></br>
                     <p className="w-2/3 m-auto text-white">With Darted you can grow your buisness by visualizing your data in real time,
                     DARTED's mission is to employ advanced analytics and AI techniques to help businesses make informed decisions about where and when to establish their presence. 

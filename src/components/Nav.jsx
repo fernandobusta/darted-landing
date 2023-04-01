@@ -1,6 +1,7 @@
 import React from 'react'
 import { Disclosure } from '@headlessui/react'
-import logo from '../logo.svg'
+
+import logo from "../assets/logo-no-background.png"
 
 
 export default function Nav() {
@@ -20,7 +21,7 @@ export default function Nav() {
         <div>
             <Disclosure
                 as="nav"
-                className="bg-stone-900 text-gray-300 shadow-md fixed left-0 w-full z-30 top-0 "
+                className="bg-transparent text-gray-300 shadow-md fixed left-0 w-full z-30 top-0 "
             >
                 {({ open }) => (
                     <>
@@ -46,7 +47,7 @@ export default function Nav() {
                                                     src={logo}
                                                     width={100}
                                                     height={100}
-                                                    className="block md:h-14 h-20 max-sm:pt-4 w-auto rounded-full"
+                                                    className="block md:h-14 h-20 max-sm:pt-4 w-auto "
                                                     alt="Logo"
                                                 />
                                             </a>
