@@ -5,8 +5,10 @@ import logo from '../logo.svg'
 
 export default function Nav() {
     const navigation = [
-        { name: "About", href: "#hero", current: false },
+        { name: "Features", href: "#feature", current: false },
         { name: "Product", href: "#product", current: false },
+        {name: "Pricing", href: "#pricing", current: false },
+        {name: "About", href: "#about", current: false},
         { name: "Contact", href: "#contact", current: false },
     ];
 
@@ -18,7 +20,7 @@ export default function Nav() {
         <div>
             <Disclosure
                 as="nav"
-                className="bg-stone-900 text-white shadow-md fixed left-0 w-full z-10 top-0 "
+                className="bg-stone-900 text-gray-300 shadow-md fixed left-0 w-full z-30 top-0 "
             >
                 {({ open }) => (
                     <>
