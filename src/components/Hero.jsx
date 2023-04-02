@@ -7,7 +7,7 @@ export default function Hero() {
                 <source src={require('../assets/hero.mp4')} type='video/mp4' />
             </video> */}
             <img src={require('../assets/bg-index.jpg')} className='object-cover absolute top-0 left-0 w-full h-full z-0' />
-            <div className='grid grid-cols-2'>
+            <div className='grid grid-cols-2 gap-5 px-24'>
                 <div className='opacity-90 z-20 p-5 rounded-xl text-left col-span-1'>
                     <div className='m-auto opacity-100'>
                         <h1 className='text-6xl font-bold text-gray-300'>Darted</h1>
@@ -25,10 +25,15 @@ export default function Hero() {
                     </div>
                 </div> 
                 
-                <div className='bg-zinc-700 m-auto p-5 rounded-xl z-20 col-span-1'>
-                    <h1 className='text-2xl font-bold text-gray-300'>HotZones</h1>
-                    <br />
-                    <img src={require('../assets/hotzones.png')} className='w-48 h-48 z-0' />
+                <div className=' m-auto p-5 rounded-xl z-20 col-span-1'>
+                    <div className='grid grid-cols-3'>
+                        <div className=''>
+                            <h1 className='text-2xl font-bold text-gray-300'>HotZones</h1>
+                            <br />
+                            <img src={require('../assets/hotzones.png')} alt="" className='w-48 h-48 z-0' />
+                        </div>
+                    </div>
+                    
                 </div>
                 
                 

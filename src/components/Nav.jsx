@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Disclosure } from '@headlessui/react'
 
 import logo from "../assets/logo-no-background.png"
@@ -17,11 +17,26 @@ export default function Nav() {
         return classes.filter(Boolean).join(" ");
     }
 
+    const [colour, setColour] = useState("transparent");
+
+    useEffect(() => {
+        const changeColour = () => {
+          if (window.scrollY >= 120) {
+            setColour("#1c1917");
+          } else {
+            setColour("#FFC107");
+          }
+        };
+        window.addEventListener("scroll", changeColour);
+      }, []);
+
     return (
+        
         <div>
             <Disclosure
                 as="nav"
-                className="bg-transparent text-gray-300 shadow-md fixed left-0 w-full z-30 top-0 "
+                style={{ backgroundColor: `${colour}` }}
+                className=" text-gray-300 shadow-md fixed left-0 w-full z-30 top-0 "
             >
                 {({ open }) => (
                     <>
