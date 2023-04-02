@@ -23,7 +23,7 @@ export default function Contact() {
     <div className=''>
       <div className='flex flex-col justify-center items-center h-screen'>
         <div>
-          <h1 className='text-6xl font-bold text-gray-300'>Contact</h1>
+          <h1 className='sm:text-6xl max-sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-70% to-sky-200'>Contact</h1>
          
           <br />
           <div className=''>
@@ -47,7 +47,7 @@ export default function Contact() {
                 <textarea name='message' id='message' rows='5' className='rounded-md p-2 mb-4 w-full' required placeholder='Your message' />
               </div>
               <div className='col-span-12'>
-                <button type='submit' className='bg-gray-300 text-black font-bold py-2 px-4 rounded-md'>
+                <button type='submit' className='bg-gradient-to-r from-emerald-600 to-90% to-sky-200 text-black font-bold sm:py-3 sm:px-5 p-2 rounded-md'>
                   Send
                 </button>
               </div>

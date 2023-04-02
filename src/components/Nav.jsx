@@ -36,7 +36,7 @@ export default function Nav() {
             <Disclosure
                 as="nav"
                 style={{ backgroundColor: `${colour}` }}
-                className=" text-gray-300 shadow-md fixed left-0 w-full z-30 top-0 "
+                className=" text-gray-300  fixed left-0 w-full z-30 top-0 "
             >
                 {({ open }) => (
                     <>
@@ -69,7 +69,7 @@ export default function Nav() {
                                         </div>
                                     </div>
                                     <div className="hidden sm:ml-6 sm:block">
-                                        <div className="flex space-x-4 align-middle my-auto">
+                                        <div className="flex space-x-4 flex-1 items-center justify-end my-auto">
                                             {navigation.map((item) => (
                                                 <a
                                                     
@@ -91,7 +91,7 @@ export default function Nav() {
                         </div>
 
                         <Disclosure.Panel className="sm:hidden">
-                            <div className="space-y-3 px-2 pt-4 pb-3 align-middle">
+                            <div className="space-y-3 px-2 pt-4 pb-3 align-middle bg-black">
                                 {navigation.map((item) => (
 
                                     <Disclosure.Button

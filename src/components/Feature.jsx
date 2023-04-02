@@ -23,19 +23,19 @@ export default function Feature() {
     return (
         <div className='flex flex-col justify-center items-center mt-32 h-screen'>
                 <div>
-                    <h1 className='text-6xl font-bold text-gray-300'>Grow your buisness</h1>
-                    <br></br>
-                    <p className="w-2/3 m-auto text-white">With Darted you can grow your buisness by visualizing your data in real time,
+                    <h1 className='sm:text-6xl max-sm:text-3xl sm:p-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-70% to-sky-200'>Grow your business</h1>
+                    <br className='hidden sm:block'></br>
+                    <p className="sm:w-2/3 max-sm:p-4 m-auto max-sm:text-xs text-white">With Darted you can grow your business by visualizing your data in real time,
                     DARTED's mission is to employ advanced analytics and AI techniques to help businesses make informed decisions about where and when to establish their presence. 
                     Our comprehensive analysis of local and industry data provides valuable insights into the ideal business locations, 
                     giving our clients a competitive edge in today's market. Rise above data and start your business with an edge. 
                     </p>
 
-                    <div className="grid grid-cols-2 gap-8 p-12">
+                    <div className="grid sm:grid-cols-2 gap-8 sm:p-12 p-4">
                         {features.map((feature) => (
-                            <div className='bg-zinc-700 rounded-md p-6'>
-                                <h1 className='text-2xl font-bold text-gray-300'>{feature.title}</h1>
-                                <p className='text-white'>{feature.description}</p>
+                            <div className='bg-zinc-700 rounded-md shadow-sm shadow-emerald-200 p-6'>
+                                 <h1 className='sm:text-3xl max-sm:text-xl sm:p-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-70% to-sky-200'>{feature.title}</h1>
+                                <p className='max-sm:text-xs text-white'>{feature.description}</p>
                             </div>
                             ))
                         }
