@@ -23,9 +23,8 @@ export default function Contact() {
     <div className=''>
       <div className='flex flex-col justify-center items-center h-screen'>
         <div>
-          <h1 className='text-5xl font-bold text-white'>Contact</h1>
-          <br />
-          <h2 className='text-2xl font-bold text-white'>Contact us for more information</h2>
+          <h1 className='text-6xl font-bold text-gray-300'>Contact</h1>
+         
           <br />
           <div className=''>
             <form className='grid grid-cols-12 gap-4'>

@@ -24,7 +24,7 @@ export default function Nav() {
           if (window.scrollY >= 120) {
             setColour("#1c1917");
           } else {
-            setColour("#FFC107");
+            setColour("transparent");
           }
         };
         window.addEventListener("scroll", changeColour);
